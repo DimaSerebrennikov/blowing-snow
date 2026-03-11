@@ -1,0 +1,17 @@
+{
+    "name": "Serebrennikov.FluffySnow.Demo",
+    "rootNamespace": "",
+    "references": [
+        "GUID:0fe007cbf5fe1b14ebb98fa5c43ac149",
+        "GUID:c72b81e67d03f2f45a8fbf54229a6444"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
