@@ -1,0 +1,56 @@
+.function {
+    flex-grow: 0;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    padding: 0 2px 2px 0;
+    margin: 2px 0 0 2px;
+    border-radius: 4px;
+    align-items: auto;
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-content: auto;
+}
+.function:hover {
+    border-radius: 0;
+    background-color: rgb(232, 128, 255);
+}
+.black{
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+}
+.white {
+    border-color: rgb(204, 204, 204);
+    color: rgb(229, 229, 229);
+    align-items: flex-start;
+    align-content: auto;
+    flex-shrink: 0;
+}
+.label {
+    padding: 0;
+    margin: 2px 0 0 2px;
+    -unity-text-align: upper-left;
+}
+.black > .label {
+    color: rgb(0, 0, 0);
+}
+
+.white > .label {
+    color: rgb(229, 229, 229);
+}
+
+.white:hover {
+    background-color: rgb(138, 61, 153);
+}
+.selected > .function {
+    background-color: rgb(128, 176, 255);
+}
+.selected:hover > .function {
+    background-color: rgb(159, 128, 255);
+}
+.unselected > .function {
+}
+
