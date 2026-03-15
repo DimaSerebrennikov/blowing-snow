@@ -1,0 +1,23 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/View/Style.uss?fileID=7433441132597879392&amp;guid=722961d4506cd084c80b6902b50cfb03&amp;type=3#Style"/>
+    <Style src="project://database/Assets/View/Configuration%20view.uss?fileID=7433441132597879392&amp;guid=b146d4e74074233499ee806212f7bd94&amp;type=3#Configuration view"/>
+    <ui:VisualElement name="Background" style="flex-grow: 0; background-color: rgb(38, 38, 38); flex-direction: column; flex-wrap: wrap;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 0; flex-direction: column; flex-wrap: wrap; width: auto;">
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:Label text="Functions in scene context" class="description" style="margin-left: 5px; margin-top: 5px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; flex-direction: row; flex-wrap: wrap; padding-top: 2px; padding-left: 2px; padding-bottom: 2px; padding-right: 2px;">
+                <ui:VisualElement name="Open" class="button ball Button">
+                    <ui:Label text="Open" name="Label" style="flex-wrap: nowrap; white-space: pre-wrap; align-items: stretch; align-content: flex-start; align-self: flex-start; justify-content: flex-start; -unity-text-align: upper-left;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Ping" class="button ball Button">
+                    <ui:Label text="Ping" name="Label" style="flex-wrap: nowrap; white-space: pre-wrap; align-items: stretch; align-content: flex-start; align-self: flex-start; justify-content: flex-start; -unity-text-align: upper-left;"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="Remove" class="button ball Button">
+                    <ui:Label text="Remove" name="Label" style="flex-wrap: nowrap; white-space: pre-wrap; align-items: stretch; align-content: flex-start; align-self: flex-start; justify-content: flex-start; -unity-text-align: upper-left;"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(74, 74, 74);"/>
+</ui:UXML>

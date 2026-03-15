@@ -1,0 +1,45 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/View/Style.uss?fileID=7433441132597879392&amp;guid=722961d4506cd084c80b6902b50cfb03&amp;type=3#Style"/>
+    <ui:ScrollView>
+        <ui:VisualElement name="Grid" class="root">
+            <ui:VisualElement style="flex-grow: 1; width: 100%; flex-direction: row;">
+                <ui:Label text="Helps to create components.  ‘Follow’ is optional" enable-rich-text="true" class="highDescription" style="margin-left: 11px; margin-top: 5px; margin-right: 0; margin-bottom: 0;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Mesh" class="mesh">
+                <ui:VisualElement name="MeshDropper" class="drop ball">
+                    <ui:Label text="Mesh" name="Label"/>
+                </ui:VisualElement>
+                <ui:Label text="Drop a mesh from the scene to generate a snow area using the same mesh" name="Description" class="description"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Tracer" class="mesh">
+                <ui:VisualElement name="TracerDropper" class="drop ball">
+                    <ui:Label text="Tracer" name="Label"/>
+                </ui:VisualElement>
+                <ui:Label text="Drop a Transform from the scene to generate a snow tracer above it" name="Description" class="description"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Cam" class="mesh" style="width: 100px;">
+                <ui:VisualElement name="CamButton" class="button ball">
+                    <ui:Label text="Cam" name="Label"/>
+                </ui:VisualElement>
+                <ui:Label text="A camera that records traces and transmits them for processing" name="Description" class="description"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Cam" class="mesh" style="width: 100px;">
+                <ui:VisualElement name="ProcessorButton" class="ball button">
+                    <ui:Label text="Processor" name="Label" style="white-space: pre-wrap;"/>
+                </ui:VisualElement>
+                <ui:Label text="Post-processing of traces for display on snow" name="Description" class="description"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="Cam" class="mesh" style="width: 90px;">
+                <ui:VisualElement name="FollowDropper" class="drop ball">
+                    <ui:Label text="Follow" name="Label"/>
+                </ui:VisualElement>
+                <ui:Label text="Drop Transform to let cam follow this target with pixel-perfect rendering. Add it after the cam" name="Description" class="description"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="CurrentState" class="mesh" style="width: 300px; background-color: rgb(38, 38, 38); border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); padding-top: 0; padding-right: 0; margin-left: 5px; padding-left: 0;">
+                <ui:VisualElement name="CurrentStateList" class="drop ball" style="background-color: rgb(51, 51, 51); flex-direction: row; flex-wrap: wrap; padding-top: 2px; padding-left: 2px; padding-bottom: 2px; padding-right: 2px; border-left-color: rgb(77, 77, 77); border-right-color: rgb(77, 77, 77); border-top-color: rgb(77, 77, 77); border-bottom-color: rgb(77, 77, 77);"/>
+                <ui:Label text="List of components of the tool that are on the scene" name="Description" class="description" style="margin-left: 6px; margin-top: 10px;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:ScrollView>
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(74, 74, 74); height: 100%; width: 100%; justify-content: flex-start; align-self: auto; align-content: auto; align-items: auto;"/>
+</ui:UXML>

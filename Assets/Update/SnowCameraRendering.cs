@@ -7,9 +7,17 @@ namespace BlowingSnow {
     public class SnowCameraRendering : MonoBehaviour {
         [SerializeField] RenderTexture rt;
         [SerializeField] Camera m_cam;
+        public RenderTexture RT {
+            get => rt;
+            set => rt = value;
+        }
+        public Camera MCam {
+            get => m_cam;
+            set => m_cam = value;
+        }
         void Awake() {
-            Shader.SetGlobalTexture("_GlobalEffectRT", rt);
-            Shader.SetGlobalFloat("_OrthographicCamSize", m_cam.orthographicSize);
+            Shader.SetGlobalTexture("_GlobalEffectRT", RT);
+            Shader.SetGlobalFloat("_OrthographicCamSize", MCam.orthographicSize);
         }
         void LateUpdate() {
             Shader.SetGlobalVector("_Position", transform.position);

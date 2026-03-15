@@ -1,56 +1,179 @@
-.function {
-    flex-grow: 0;
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    padding: 0 2px 2px 0;
-    margin: 2px 0 0 2px;
-    border-radius: 4px;
-    align-items: auto;
+.root {
+    background-color: rgb(38, 38, 38);
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+}
+
+.even {
+    background-color: rgb(60, 60, 60);
+}
+
+.odd {
+}
+
+.description {
+    padding: 0;
+    margin: 5 0 0 0;
+    -unity-text-align: upper-left;
+    font-size: 12px;
+    color: rgb(229, 229, 229);
+    white-space: normal;
+    margin-top: 10px;
+    align-content: flex-end;
     align-self: flex-start;
     justify-content: flex-start;
-    align-content: auto;
+    align-items: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    -unity-font-definition: url("project://database/Packages/com.unity.cinemachine/Runtime/Debug/CinemachineRuntimeTheme.tss?fileID=2230732570650464555&guid=df9aec944f4474a04847b6d6375e4138&type=3#NotInter-Regular");
 }
-.function:hover {
-    border-radius: 0;
-    background-color: rgb(232, 128, 255);
+
+.highDescription {
+    padding: 0;
+    margin: 5 0 0 0;
+    -unity-text-align: upper-left;
+    font-size: 12px;
+    color: rgb(229, 229, 229);
+    white-space: normal;
+    margin-top: 0;
+    align-content: flex-end;
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
-.black{
+
+.button {
+    border-color: black;
+    background-color: rgb(204, 204, 204);
     border-left-color: rgb(0, 0, 0);
     border-right-color: rgb(0, 0, 0);
     border-top-color: rgb(0, 0, 0);
     border-bottom-color: rgb(0, 0, 0);
 }
-.white {
-    border-color: rgb(204, 204, 204);
-    color: rgb(229, 229, 229);
-    align-items: flex-start;
-    align-content: auto;
-    flex-shrink: 0;
-}
-.label {
+
+.button > #Label {
     padding: 0;
-    margin: 2px 0 0 2px;
-    -unity-text-align: upper-left;
-}
-.black > .label {
-    color: rgb(0, 0, 0);
-}
-
-.white > .label {
-    color: rgb(229, 229, 229);
+    margin: 9 9 9 9;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-Bold.ttf?fileID=12800000&guid=75fa21d73596c15499f27d709d22e0e5&type=3#Montserrat-Bold");
+    color: rgb(38, 38, 38);
+    font-size: 12px;
+    flex-grow: 1;
 }
 
-.white:hover {
-    background-color: rgb(138, 61, 153);
+.ball {
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border-width: 1px;
+    align-self: stretch;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-basis: auto;
+    visibility: visible;
+    overflow: visible;
 }
-.selected > .function {
-    background-color: rgb(128, 176, 255);
+
+.stateElement {
+    border-color: black;
+    background-color: rgb(204, 204, 204);
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border-width: 1px;
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    flex-basis: auto;
+    visibility: visible;
+    overflow: visible;
+    max-width: 156px;
+    aspect-ratio: auto;
+    height: 39px;
 }
-.selected:hover > .function {
-    background-color: rgb(159, 128, 255);
+
+.stateElement > #Label {
+    padding: 0;
+    margin: 8 5 8 5;
+    -unity-text-align: middle-left;
+    color: rgb(38, 38, 38);
+    flex-grow: 1;
+    overflow: hidden;
+    align-self: flex-start;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
-.unselected > .function {
+
+.drop {
+    border-color: rgb(92, 92, 92);
+    background-color: rgb(38, 38, 38);
+    border-left-color: rgb(128, 128, 128);
+    border-right-color: rgb(128, 128, 128);
+    border-top-color: rgb(128, 128, 128);
+    border-bottom-color: rgb(128, 128, 128);
 }
+
+.drop > #Label {
+    padding: 0;
+    margin: 9 9 9 9;
+    -unity-text-align: middle-center;
+    -unity-font-definition: url("project://database/Assets/Fonts/Montserrat-Bold.ttf?fileID=12800000&guid=75fa21d73596c15499f27d709d22e0e5&type=3#Montserrat-Bold");
+    color: rgb(204, 204, 204);
+    font-size: 12px;
+    flex-grow: 1;
+}
+
+.mesh {
+    flex-grow: 1;
+    width: 152px;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    background-color: rgb(74, 74, 74);
+    flex-shrink: 1;
+    align-items: stretch;
+    align-content: flex-start;
+    justify-content: center;
+    align-self: flex-start;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    flex-wrap: nowrap;
+    flex-direction: column;
+    aspect-ratio: auto;
+}
+
 
